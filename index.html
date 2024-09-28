@@ -21,9 +21,10 @@
     <p>version <span id="version"></span></p>
 
     <script type="text/javascript">
-      const { ipcRenderer } = require('electron')
-      let version = ipcRenderer.sendSync('get-version')
-      document.getElementById('version').innerHTML = version
+      document.addEventListener('DOMContentLoaded', async () => {
+        let version = await window.electronAPI.getVersion();
+        document.getElementById('version').innerHTML = version
+      })
     </script>
   </body>
 </html>
