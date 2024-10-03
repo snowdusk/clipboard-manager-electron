@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Formatter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../node_modules/jsoneditor/dist/jsoneditor.min.css" />
+</head>
+<body>
+<div class="container">
+    <div class="input-area">
+        <h2>输入 JSON 字符串</h2>
+        <textarea id="inputJson" placeholder="粘贴 JSON 字符串..." spellcheck="false" autofocus></textarea>
+    </div>
+    <div class="output-area">
+        <h2>格式化后的 JSON</h2>
+        <div id="jsoneditor" style="height: 100%;"></div>
+    </div>
+</div>
+
+<script src="renderer.js"></script>
+</body>
+</html>
