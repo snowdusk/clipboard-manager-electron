@@ -16,7 +16,8 @@
     "lodash": "^4.17.20",
     "lowdb": "^1.0.0",
     "node-notifier": "^8.0.0",
-    "jsoneditor": "^10.1.0"
+    "jsoneditor": "^10.1.0",
+    "sql-formatter": "^15.4.2"
   },
   "devDependencies": {
     "electron": "^18.3.7",

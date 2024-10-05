@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    height: 100vh; /* 确保页面高度填满视口 */
+}
+
+.container {
+    display: flex;
+    height: 100%; /* 使容器高度占满父元素 */
+}
+
+.input-area, .output-area {
+    flex: 1; /* 平均分配宽度 */
+    margin: 10px; /* 外边距 */
+    padding: 20px; /* 内边距 */
+    border: 1px solid #ddd; /* 边框 */
+    border-radius: 5px; /* 圆角 */
+    background-color: #fff; /* 白色背景 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    display: flex;
+    flex-direction: column; /* 垂直排列内容 */
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px; /* 标题下方间距 */
+}
+
+textarea {
+    flex: 1; /* 让 textarea 填充剩余空间 */
+    padding: 10px; /* 内边距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 4px; /* 圆角 */
+    font-family: monospace; /* 单一字体 */
+    resize: none; /* 禁止调整大小 */
+}
+
+pre {
+    flex: 1; /* 让 pre 填充剩余空间 */
+    padding: 10px; /* 内边距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 4px; /* 圆角 */
+    background-color: #fafafa; /* 背景颜色 */
+    overflow: auto; /* 添加滚动条 */
+}

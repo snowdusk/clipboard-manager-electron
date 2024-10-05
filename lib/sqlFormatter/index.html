@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Formatter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="input-area">
+        <h2>输入 SQL 语句</h2>
+        <textarea id="inputSql" placeholder="粘贴 SQL 语句..." spellcheck="false" autofocus></textarea>
+    </div>
+    <div class="output-area">
+        <h2>格式化后的 SQL</h2>
+        <pre id="formattedSql" style="white-space: pre-wrap;"></pre>
+    </div>
+</div>
+
+<script src="node_modules/sql-formatter/lib/sql-formatter.min.js"></script>
+<script src="renderer.js"></script>
+</body>
+</html>
