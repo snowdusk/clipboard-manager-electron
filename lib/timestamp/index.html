@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时间戳转换器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            width: 320px; /* 设置整体宽度 */
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block; /* 让标签独占一行 */
+        }
+        input {
+            margin: 5px 0;
+            padding: 8px; /* 增加内边距 */
+            width: calc(100% - 16px); /* 减去内边距 */
+            border: 1px solid #ccc;
+            border-radius: 4px; /* 圆角边框 */
+        }
+        div {
+            margin-top: 10px; /* 结果显示区域与输入框间距 */
+            font-size: 14px; /* 调整结果字体大小 */
+            color: #333; /* 字体颜色 */
+        }
+        .timestamp {
+            margin-top: 10px;
+            font-weight: bold;
+            cursor: pointer; /* 鼠标悬停时显示手型 */
+            color: #007BFF; /* 修改颜色为蓝色 */
+        }
+        .timestamp:hover {
+            text-decoration: underline; /* 悬停时下划线效果 */
+        }
+    </style>
+</head>
+<body>
+<h2>时间戳转换器</h2>
+<label for="seconds">秒时间戳:</label>
+<input type="number" id="seconds" placeholder="输入秒时间戳">
+<div id="secondsResult"></div>
+
+<label for="milliseconds">毫秒时间戳:</label>
+<input type="number" id="milliseconds" placeholder="输入毫秒时间戳">
+<div id="millisecondsResult"></div>
+
+<div class="timestamp" id="currentTimestampResult" title="点击复制当前 UNIX 时间戳"></div>
+
+<script src="renderer.js"></script>
+</body>
+</html>
